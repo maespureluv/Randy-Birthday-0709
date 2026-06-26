@@ -603,7 +603,7 @@ input{
     max-height:82vh;
     overflow:auto;
     border-radius:28px;
-    padding:36px 42px 80px 42px;
+    padding:36px 42px 44px 42px;
     box-shadow:0 0 35px rgba(209,123,157,0.55);
     border:2px solid rgba(209,123,157,0.60);
     opacity:0;
@@ -630,14 +630,32 @@ input{
 }
 
 #finalSignature{
-    position:absolute;
-    left:34px;
-    bottom:24px;
+    position:relative;
     color:#d17b9d;
     font-family:'Glacial';
+    font-size:15px;
+    line-height:1.8;
+    text-align:center;
+    margin:48px auto 10px auto;
+    padding-top:28px;
+    border-top:1px solid rgba(209,123,157,0.28);
+}
+
+#finalSignature .foreverLine{
+    font-family:'Apricots';
+    font-size:34px;
+    color:#d17b9d;
+    display:block;
+    margin-bottom:8px;
+    text-shadow:0 0 10px rgba(255,255,255,0.95), 0 0 16px rgba(209,123,157,0.35);
+}
+
+#finalSignature .finalThankYou{
+    display:block;
+    margin-top:18px;
     font-size:14px;
-    line-height:1.6;
-    text-align:left;
+    opacity:0;
+    animation:softFinalFade 1.8s ease forwards 1s;
 }
 
 #closeFinalNote{
@@ -772,6 +790,11 @@ input{
 @keyframes goldTwinkle{
     0%,100%{opacity:0.25;transform:scale(0.85) rotate(0deg);}
     50%{opacity:1;transform:scale(1.22) rotate(12deg);}
+}
+
+@keyframes softFinalFade{
+    0%{opacity:0;transform:translateY(10px);}
+    100%{opacity:1;transform:translateY(0);}
 }
 
 @media(max-width:800px){
@@ -1186,7 +1209,7 @@ input{
         <p>Happy 26th Birthday once again, my Raja. My one and only. My best friend. My partner. My safe place. My greatest comfort. My ride or die. My better half. My future husband. My always and forever. My greatest blessing. My answered prayer. My favorite person. My home. My world. My everything. The love of my life.</p>
         <p>If I could have added a thousand more pages, I would have. If I could have kept writing forever, I would have. No website could ever be big enough to hold everything I feel for you, because my love for you will always be greater than anything I could ever create. So before you close this tab, I only want to leave you with one final reminder: thank you for existing, thank you for being born, and thank you for letting me love you. I loved you yesterday, I love you today, I will love you tomorrow, and I'll continue loving you through every tomorrow that follows. I hope this birthday becomes one you'll always remember, not because of this website alone, but because I hope it reminds you of how incredibly loved you truly are.</p>
         <p>I love you so much, my handsome Raja. Happy Birthday, my love. ♡</p>
-        <div id="finalSignature">Forever and always,<br><br>Princess Paraggua Egert-Toolsie<br><br>July 9, 2026</div>
+        <div id="finalSignature"><span class="foreverLine">♡ Forever Yours ♡</span>Princess Paraggua Egert-Toolsie<br>July 9, 2026<span class="finalThankYou">Thank you for spending your birthday with me. ♡</span></div>
     </div>
 </div>
 
